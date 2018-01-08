@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{@title}} : {{@subTitle}}</title>
+{{@css}}
+</head>
+<body>
+
+
+<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-3">{{@title}}</h1>
+	    <p class="lead">{{@subTitle}}</p>
+	  </div>
+</div>
+
+<div class="row">
+	<div class="col-md-9">
+		<div class="card">
+		  <div class="card-block">
+		    <h4 class="card-title">{{@postTitle}}</h4>
+		    <h6 class="card-subtitle mb-2 text-muted">By {{@postAuthor}} : Posted at {{@postDate}}</h6>
+		    <br /><hr />
+		    <p class="card-text">{{@postContent}}</p>
+			    <a href="{{@url}}" class="card-link">Go Back</a>
+		  </div>
+		</div>
+		<br />
+	</div>
+	<div class="col-md-3">
+		<div class="card">
+		  <img class="img img-responsive img-thumbnail" height="100%" src="{{@authorImg}}.small" alt="{{@postAuthor}} 's Image">
+		  <div class="card-block">
+		    <h4 class="card-title">{{@postAuthor}}</h4>
+		    <a href="mailto:{{@postAuthorEmail}}" class="btn btn-primary">Contact Author</a>
+		  </div>
+		</div>
+	</div>
+</div>
+
+</body>
+{{@js}}
+</html>

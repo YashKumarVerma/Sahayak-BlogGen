@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{@title}} : {{@subTitle}}</title>
+{{@css}}
+</head>
+<body>
+
+<div class="jumbotron jumbotron-fluid">
+	  <div class="container">
+	    <h1 class="display-3">{{@title}}</h1>
+	    <p class="lead">{{@subTitle}}</p>
+	  </div>
+</div>
+
+<div class="row">
+	<div class="col-md-8">
+		<div class="container">
+			{{@posts}}
+		</div>
+	</div>
+	<div class="col-md-4">
+		<img class="img img-responsive" width="100%" src="{{@authorImg}}">
+	</div>
+</div>
+
+</body>
+{{@js}}
+</html>
