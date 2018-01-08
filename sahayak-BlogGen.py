@@ -1,6 +1,7 @@
-# TODO
-# add custom date type in config and create post field
-# to get the file
+""" 
+Created By : Yash Kumar verma
+https://github.com/YashKumarVerma/Sahayak-BlogGen
+"""
 from pathlib import Path
 import sys
 from subprocess import call
