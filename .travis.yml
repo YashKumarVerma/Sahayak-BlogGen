@@ -1,6 +1,7 @@
-os:ubuntu
+# Use container
+os: ubuntu 
 sudo: false
-dist:trusty
+dist: trusty
 
 language: python
 
