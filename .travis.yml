@@ -1,9 +1,11 @@
+os:ubuntu
+sudo: false
+dist:trusty
+
 language: python
 
 python:
-
   - "3.6"
 
 script: 
-
-  - python sahayak-BlogGen.py
+  - python -m py_compile sahayak-BlogGen.py
